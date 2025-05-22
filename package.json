@@ -2,6 +2,7 @@
   "name": "multi-terminal-runner",
   "displayName": "Multi Terminal Runner",
   "description": "Run multiple terminal commands easily with a simple UI",
+  "publisher": "MultiTerminalRunner",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.85.0"
