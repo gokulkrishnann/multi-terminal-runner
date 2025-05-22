@@ -1,0 +1,74 @@
+{
+  "name": "multi-terminal-runner",
+  "displayName": "Multi Terminal Runner",
+  "description": "Run multiple terminal commands easily with a simple UI",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:multiCmdTerminal.openUI"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "multiCmdTerminal.openUI",
+        "title": "Multi Cmd Terminal: Open Command Manager"
+      }
+    ],
+    "configuration": {
+      "title": "Multi Command Terminal",
+      "properties": {
+        "multiCmdTerminal.commands": {
+          "type": "array",
+          "default": [],
+          "description": "List of commands to run in separate terminals",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "description": "Name of the command"
+              },
+              "command": {
+                "type": "string",
+                "description": "Command to execute"
+              },
+              "cwd": {
+                "type": "string",
+                "description": "Working directory for the command"
+              }
+            },
+            "required": [
+              "name",
+              "command"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.85.0",
+    "@types/node": "^16.18.0",
+    "@typescript-eslint/eslint-plugin": "^6.13.1",
+    "@typescript-eslint/parser": "^6.13.1",
+    "eslint": "^8.54.0",
+    "typescript": "^5.3.2"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

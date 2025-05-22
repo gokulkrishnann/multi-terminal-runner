@@ -1,0 +1,12 @@
+{
+  "multiCmdTerminal.commands": [
+    {
+      "name": "Say Hello",
+      "command": "echo Hello from Terminal 1"
+    },
+    {
+      "name": "Print Dir",
+      "command": "ls"
+    }
+  ]
+}
