@@ -11,6 +11,10 @@ A VS Code extension that allows you to run multiple commands in separate termina
 - Optionally configure custom commands via settings
 - Supports specifying working directory per command
 
+## Demo
+
+![Demo Animation](demo.gif)
+
 ## Usage
 
 ### Open the Command Manager UI

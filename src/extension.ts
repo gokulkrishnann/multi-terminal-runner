@@ -8,7 +8,7 @@ export function activate(context: vscode.ExtensionContext) {
     async () => {
       const panel = vscode.window.createWebviewPanel(
         "multiCmdTerminalUI",
-        "Multi Cmd Terminal",
+        "Multi Terminal Runner",
         vscode.ViewColumn.One,
         {
           enableScripts: true,

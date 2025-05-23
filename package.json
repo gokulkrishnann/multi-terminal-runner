@@ -73,7 +73,13 @@
     "eslint": "^8.54.0",
     "typescript": "^5.3.2"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "vscode",
+    "extension",
+    "terminal",
+    "multi-terminal",
+    "command-runner"
+  ],
+  "author": "gokulkrishnann",
   "license": "ISC"
 }
